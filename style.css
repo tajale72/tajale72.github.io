@@ -139,25 +139,43 @@ li {
 
 }
 
-.img-container {
+/* .img-container {
     margin-top: 20px;
-    width: 500px;
-    height: 500px;
-    overflow: hidden;
-    border-radius: 50%;
     float: left;
 }
 
-.img-container img {
-    width: 80%;
-}
+*/
 
-.profile-des {
-    margin-top: 20px;
-    width: 600px;
-    height: 600px;
-    float: right;
-}
+.img-container img {
+
+   
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    background-image: url("profile1.JPG");
+
+    width: 50%;
+  height: 600px;
+  background-size: cover;
+  margin-left: 350px;
+  }
+
+  
+  /* Position text in the middle of the page/image */
+  .profile-des {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
 
 /*RESPONSIVE NAVBAR MENU STARTS*/
 
@@ -249,11 +267,14 @@ input[type=checkbox] {
 
 }
 
-.container {
-    background-color: rgb(97, 53, 159)
+hr {
+    margin-top : 30px;
 }
 
-.linkedin {
-    font-size: 50px;
-    height: 50px;
+.gocode {
+    display: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
