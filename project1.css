@@ -2,16 +2,71 @@
     text-align: center;
     background: black;
     color: white;
-    height : 900px;
+    height: 100vh; /* sets the height to 100% of the viewport height */
+    width: 100vw;
+    background-size: contain
+
   }
 
-  .bar1, .bar2, .bar3 {
+  .container1 {
+    font-size : 2vh;
+    float : left;
+    margin-left : 25vh;
+    margin-top: 5vh;
+    cursor: pointer;
+  }
+
+  .container2 {
+    float : right;
+    margin-right : 25vh;
+    margin-top: 5vh;
+    cursor: pointer;
+  }
+
+  .container3 {
+    float : left;
+    margin-left : 15vh;
+    margin-top: 40vh;
+    cursor: pointer;
+    font-size : 3vh;
+  }
+
+  .container4 {
+    float : right;
+    margin-right : 15vh;
+    margin-top: 40vh;
+    cursor: pointer;
+    font-size : 4vh;
+  }
+
+  .container4 img {
+    width : 30vh;
+    height : 40vh;
+  }
+
+  /* .container3 h2 {
+    float : left;
+    cursor: pointer;
+    font-size : 2vh;
+    margin-top: 50vh;
+    margin-left: -30vh;
+  } */
+
+  .bar1, .bar3 {
     width: 35px;
     height: 5px;
     background-color: white;
     margin: 6px 0;
     transition: 0.4s;
     margin-right: 10px;
+  }
+
+  .bar2 {
+    width: 15px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
   }
   
   .change .bar1 {
@@ -26,21 +81,30 @@
 
   .body1 {
     text-align: center;
-    background: #11ee4f;
-    color: white;
-    height : 400px;
+    background: #d1e610c8;
+    color: black;
+    height: 45vh; /* sets the height to 100% of the viewport height */
+    width: 100vw;
+  }
+
+  .body1-description{
+    padding : 15vh;
+    font-size : 3vh;
+    font-weight: bold;
   }
 
   .body2 {
     text-align: center;
     background: white;
     color: white;
-    height : 900px;
+    height: 120vh; /* sets the height to 100% of the viewport height */
+    width: 100vw;
   }
 
   .footer {
     text-align: center;
     background: black;
     color: black;
-    height : 400px;
+    height: 55vh; /* sets the height to 100% of the viewport height */
+    width: 100vw;
   }
