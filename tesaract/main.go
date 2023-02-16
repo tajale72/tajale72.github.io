@@ -109,3 +109,45 @@ func NewImage() {
 	client.Close()
 
 }
+
+
+package main
+
+import (
+    "fmt"
+    "image"
+    _ "image/jpeg" // import JPEG support
+    _ "image/png"  // import PNG support
+    "os"
+)
+
+func main() {
+    // set the path to the image file
+    imagePath := "path/to/image.png"
+
+    // open the image file and decode it
+    file, err := os.Open(imagePath)
+    if err != nil {
+        fmt.Println("Error: ", err)
+        return
+    }
+    defer file.Close()
+
+    img, _, err := image.Decode(file)
+    if err != nil {
+        fmt.Println("Error: ", err)
+        return
+    }
+
+    // get the width and height of the image
+    bounds := img.Bounds()
+    width, height := bounds.Max.X, bounds.Max.Y
+
+    // loop over the pixels in the image and extract their color data
+    for y := 0; y < height; y++ {
+        for x := 0; x < width; x++ {
+            r, g, b, a := img.At(x, y).RGBA()
+            fmt.Printf("Pixel at (%d,%d) has color RGBA(%d,%d,%d,%d)\n", x, y, r>>8, g>>8, b>>8, a>>8)
+        }
+    }
+}
