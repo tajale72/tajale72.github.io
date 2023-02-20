@@ -149,11 +149,55 @@
 .footer {
     text-align: center;
     background: black;
-    color: black;
+    color: white;
     height: 55vh;
     /* sets the height to 100% of the viewport height */
     width: 100vw;
 }
+
+ .contact {
+    font-size: 5vh;
+    float: left;
+    margin-left: 50vh;
+    margin-top: 10vh;
+    cursor: pointer;
+    line-height: 2;
+}
+
+
+.btn {
+    background-color: transparent;
+    border: 2px solid #909d1ac8;
+    color: white;
+    font-size: 2vh;
+    padding: 2vh;
+}
+
+.btn:hover {
+    background-color: #909d1ac8;
+    color: black;
+}
+
+
+ .social {
+    margin-top: 10vh;
+    font-size: 5vh;
+    float: right;
+    margin-right: 50vh;
+    cursor: pointer;
+    line-height: 2;
+}
+
+.copyright {
+    text-align: center;
+    background: black;
+    color:  rgb(229, 221, 221);
+    height: 5vh;
+    /* sets the height to 100% of the viewport height */
+    width: 100vw;
+}
+
+
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
