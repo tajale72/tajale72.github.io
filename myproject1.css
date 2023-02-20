@@ -35,6 +35,7 @@
     margin-top: 40vh;
     cursor: pointer;
     font-size: 4vh;
+    color :  #909d1ac8;
 }
 
 .container4 {
@@ -46,7 +47,7 @@
 }
 
 .container4 img {
-    width: 30vh;
+    width: 60vh;
     height: 50vh;
 }
 
@@ -121,38 +122,57 @@
     border: 2px solid black;
 }
 
-.my-projects a {
-    text-decoration: none
-
-}
-
-.my-projects a:hover {
-    color: white
-}
-
 .my-projects:hover {
     background-color: black;
+    color: white;
 }
 
 
 .body2 {
     background: rgb(243, 233, 233);
     color: white;
-    height: 100vh;
+    height: 300vh;
     /* sets the height to 100% of the viewport height */
     width: 100vw;
 
 }
 
-.body2-container1 {
-    float: left;
-    margin-left: 25vh;
-    margin-top: 20vh;
-    cursor: pointer;
-    font-size: 4vh;
-    color: black;
+.directv img {
+    margin-top: 10vh;
+    width: 100vh;
+    margin-left: 40vh;
+    height: 50vh;
 
 }
+
+.directv:hover {
+    transform: scale(1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+.insurance img {
+    margin-top: 10vh;
+    width: 100vh;
+    margin-left: 40vh;
+    height: 50vh;
+
+}
+
+.health img {
+    margin-top: 10vh;
+    width: 100vh;
+    margin-left: 40vh;
+    height: 50vh;
+
+}
+
+.bank img {
+    margin-top: 10vh;
+    width: 100vh;
+    margin-left: 40vh;
+    height: 50vh;
+
+}
+
 
 
 .footer {
@@ -207,10 +227,10 @@
     width: 100vw;
 }
 
-.social-link a {
+a {
     color: rgb(229, 221, 221);
     text-decoration: none;
-} 
+}
 
 
 
@@ -430,8 +450,13 @@
 
 }
 
-a {
+.social-link {
     color: rgb(229, 221, 221);
+    text-decoration: none;
+}
+
+.project {
+    color: black;
     text-decoration: none;
 }
 }
