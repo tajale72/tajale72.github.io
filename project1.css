@@ -205,12 +205,24 @@ a {
 
 
 
-/* On screens that are 992px or less, set the background color to blue */
-@media screen and (max-width: 992px) {
-   
-  }
-  
-  /* On screens that are 600px or less, set the background color to olive */
-  @media screen and (max-width: 600px) {
-    
-  }
+/* CSS for iPhone */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+    /* Add your styles for iPhone here */
+    body {
+        font-size: 16px;
+    }
+}
+
+/* CSS for Samsung */
+@media only screen 
+  and (min-device-width: 360px) 
+  and (max-device-width: 740px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    /* Add your styles for Samsung here */
+    body {
+        font-size: 18px;
+    }
+}
