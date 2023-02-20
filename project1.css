@@ -186,6 +186,7 @@
     margin-right: 50vh;
     cursor: pointer;
     line-height: 2;
+    color:  rgb(229, 221, 221);
 }
 
 .copyright {
@@ -195,6 +196,11 @@
     height: 5vh;
     /* sets the height to 100% of the viewport height */
     width: 100vw;
+}
+
+a {
+    color:  rgb(229, 221, 221);
+    text-decoration: none;
 }
 
 
